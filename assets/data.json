@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"title": "Qual é a equação balanceada correta para a reação de combustão do metano (CH₄)?",
+		"options": [
+		  "CH₄ + 2O₂ -> CO₂ + H₂O",
+		  "CH₄ + O₂ -> CO₂ + H₂O",
+		  "CH₄ + 3O₂ -> 2CO₂ + 3H₂O",
+		  "CH₄ -> CO₂ + H₂O"
+		],
+		"type": "MULTIPLE_CHOICE_QUESTION",
+		"correctAnswer": 0
+	},
+	{
+		"id": 2,
+		"title": "Na equação química não balanceada: H₂ + O₂ ->  H₂O, quantos átomos de hidrogênio estão presentes nos reagentes?",
+		"options": [
+		  "1",
+		  "2",
+		  "3",
+		  "4"
+		],
+		"type": "MULTIPLE_CHOICE_QUESTION",
+		"correctAnswer": 1
+	},
+	{
+		"id": 3,
+		"title": "Ao balancear a equação: CH₂ + O₂ -> CO₂ + H₂O, qual coeficiente é colocado antes de O₂ para equilibrar o número de átomos de oxigênio?",
+		"options": [
+		  "1",
+		  "2",
+		  "3",
+		  "4"
+		],
+		"type": "MULTIPLE_CHOICE_QUESTION",
+		"correctAnswer": 1
+	},
+	{
+		"id": 4,
+		"title": "Quando se balanceia uma equação química, quais elementos você deve equilibrar primeiro?",
+		"options": [
+		  "Hidrogênio e oxigênio",
+		  "Carbono e hidrogênio",
+		  "Oxigênio e nitrogênio",
+		  "Potássio e cloro"
+		],
+		"type": "MULTIPLE_CHOICE_QUESTION",
+		"correctAnswer": 0
+	},
+	{
+		"id": 5,
+		"title": "Se uma equação química não estiver balanceada, o que pode ocorrer?",
+		"options": [
+		  "A reação não ocorrerá",
+		  "A reação liberará mais energia",
+		  "A equação se tornará mais simples",
+		  "A lei da conservação da massa será violada"
+		],
+		"type": "MULTIPLE_CHOICE_QUESTION",
+		"correctAnswer": 0
+	},
+	{
+		"id": 6,
+		"title": "Preencha com os valores para realizar o balanceamento.",
+		"options": ["?C", "+" ,"?O₂","->","?CO₂"],
+		"type": "QUESTION_FILL_VALUES",
+		"correctAnswer": [1, 1, 1]
+	},
+	{
+		"id": 7,
+		"title": "Preencha com os valores para realizar o balanceamento.",
+		"options": ["?KMnO₄", "+" ,"?HCl","->","?KCl", "+", "?MnCl₂", "+", "?H₂O", "+", "?Cl₂"],
+		"type": "QUESTION_FILL_VALUES",
+		"correctAnswer": [2, 16, 2, 2, 1, 6]
+	},	
+	{
+		"id": 8,
+		"title": "Preencha com os valores para realizar o balanceamento.",
+		"options": ["?C₂H₄", "+" ,"?O₂","->","?CO₂", "+", "?H₂O"],
+		"type": "QUESTION_FILL_VALUES",
+		"correctAnswer": [2, 3, 4, 2]
+	},
+	{
+		"id": 9,
+		"title": "Preencha com os valores para realizar o balanceamento.",
+		"options": ["?Ba(OH)₂", "+" ,"?H₃PO₄","->","?Ba₃(PO₄)₂", "+", "?H₂O"],
+		"type": "QUESTION_FILL_VALUES",
+		"correctAnswer": [3, 2, 1, 6]
+	},
+	{
+		"id": 10,
+		"title": "Preencha com os valores para realizar o balanceamento.",
+		"options": ["?N₂H₄", "+" ,"?O₂","->","?N₂", "+", "?H₂O"],
+		"type": "QUESTION_FILL_VALUES",
+		"correctAnswer": [1, 3, 1, 2]
+	}
+	
+]

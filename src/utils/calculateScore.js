@@ -1,0 +1,1 @@
+export default calculateScore = ({correctAnswered, totalQuestions}) => (correctAnswered / totalQuestions) * 100;
