@@ -9,9 +9,9 @@ import { useNavigation } from "@react-navigation/native";
 const HomeScreen = () => {
   const navigation = useNavigation();
   return (
-    <View style={{ backgroundColor: "#FFEB3B", height: "100%"}}>
+    <View style={{ backgroundColor: "#FFEB3B", height:"100%", flex: 1}}>
       <Image
-        style={{ height: 350, width: "100%", resizeMode: "contain" }}
+        style={{ height: "30%", width: "100%", resizeMode: "contain", marginTop:"10%" }}
         source={headerImage}
       />
 

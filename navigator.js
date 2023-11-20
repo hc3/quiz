@@ -1,6 +1,7 @@
 import AboutScreen from './src/screens/about';
 import GameScreen from './src/screens/game';
 import HomeScreen from './src/screens/home';
+import LoginScreen from './src/screens/login';
 import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
 import StatisticScreen from './src/screens/statistic';
@@ -11,6 +12,7 @@ const Navigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Login" component={LoginScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Game" component={GameScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Statistic" component={StatisticScreen} options={{headerShown:false}}/>

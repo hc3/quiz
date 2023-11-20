@@ -34,13 +34,17 @@ const GameScreen = ({ route: { params: { questions } } }) => {
         setQuestion(questions[_currentQuestion])
     }
 
+    const handleTimeIsOver = () => {
+        handleAnsweredQuestion(false);
+    }
+
     return (
         <View style={{ flex: 1}}>
             <ImageBackground
             source={require('../../assets/game_background.png')}
             style={{ flex: 1, width: '100%', height: '100%', resizeMode: 'cover' }}>
 
-                <View style={{marginTop: "20%"}}>
+                <View style={{marginTop: "15%"}}>
                 <Pressable
                     onPress={() => navigation.navigate("Home")}
                     style={{
@@ -73,7 +77,7 @@ const GameScreen = ({ route: { params: { questions } } }) => {
                         Percentual de acertos: {calculateScore(getPlayerStatistics())}%
                     </Text>
                 </View>
-                <Question question={question} onAnswered={handleAnsweredQuestion}/>
+                <Question question={question} onAnswered={handleAnsweredQuestion} onTimeIsOver={handleTimeIsOver} />
 
             </ImageBackground>
         </View>
@@ -83,6 +87,6 @@ const GameScreen = ({ route: { params: { questions } } }) => {
 export default GameScreen;
 
 const style = StyleSheet.create({
-    statistics: { borderRadius: 10, borderWidth: 2, borderColor: '#795548', marginLeft:"10%", marginRight: "10%", marginTop: "10%", textAlign: 'center', justifyContent: 'center' },
+    statistics: { borderRadius: 10, borderWidth: 2, borderColor: '#795548', marginLeft:"10%", marginRight: "10%", marginTop: "5%", textAlign: 'center', justifyContent: 'center' },
     statisticsText: { textAlign: "center", paddingTop: "1%", fontSize: 20, color: "#212121" }
 })

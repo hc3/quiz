@@ -1,11 +1,25 @@
+import React, { useEffect, useState } from 'react';
 import { Text, View } from "react-native";
 
 import FillValuesQuestion from "./fill_values_question";
 import MultipleChoiceQuestion from "./multiple_choice_question";
-import React from 'react';
 
-const Question = ({ question, onAnswered }) => {
-    const { title, options, type, correctAnswer } = question;
+const Question = ({ question, onAnswered, onTimeIsOver }) => {
+    const { title, options, type, correctAnswer, maxSpendTime } = question;
+    let [ spendTime, setSpendTime ] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            spendTime += 1;
+            setSpendTime(spendTime);
+            if(spendTime >= maxSpendTime) {
+                clearInterval(interval);
+                onTimeIsOver();
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [maxSpendTime])
 
     const handleAnsweredMultipleChoiceQuestion = (userResponse) => {
         onAnswered(userResponse === correctAnswer);
@@ -28,6 +42,7 @@ const Question = ({ question, onAnswered }) => {
     }
     return (
         <View>
+            <Text>Tempo restante: {Number(maxSpendTime - spendTime)} segundos.</Text>
             <Text
             style={{
                 textAlign: "justify",
