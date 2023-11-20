@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "134219184844",
+    "project_id": "quizdb-26ba3",
+    "storage_bucket": "quizdb-26ba3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134219184844:android:79339bd10e1d68aea6a069",
+        "android_client_info": {
+          "package_name": "com.zelimen741.quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUMHPpNfbW_7UHWXlzhWd7tHQ79y-5Lmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
