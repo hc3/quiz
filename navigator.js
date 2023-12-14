@@ -1,4 +1,5 @@
 import AboutScreen from './src/screens/about';
+import CreateStudent from './src/screens/create_student';
 import GameScreen from './src/screens/game';
 import HomeScreen from './src/screens/home';
 import LoginScreen from './src/screens/login';
@@ -12,6 +13,7 @@ const Navigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="CreateStudent" component={CreateStudent} options={{headerShown:false}}/>
         <Stack.Screen name="Login" component={LoginScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Game" component={GameScreen} options={{headerShown:false}}/>

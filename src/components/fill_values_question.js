@@ -1,4 +1,4 @@
-import { Alert, Pressable, Text, TextInput, View } from 'react-native';
+import { Alert, Pressable, Text, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
 
 import FillValuesQuestionOption from './fill_values_question_option';
@@ -27,31 +27,6 @@ const FillValuesQuestion = ({ options, onAnswered }) => {
     }
     onAnswered(answers);
   };
-
-  // const RenderOption = (option, index) => {
-  //   return (
-  //       <View style={{ flexDirection: 'row', marginVertical: 7 }} key={index}>
-  //           { option.includes('?') ? 
-  //               <TextInput
-  //                   style={{
-  //                   borderWidth: 1,
-  //                   borderColor: 'black',
-  //                   padding: 8,
-  //                   marginRight: 5,
-  //                   marginLeft: 5,
-  //                   width: 40,
-  //                   height: 40
-  //                   }}
-  //                   value={inputValues[index]}
-  //                   onChangeText={(value) => setInputValues({ ...inputValues,[index]: value })}
-  //                   keyboardType="numeric"
-  //                   fontSize={20}
-  //               /> : null
-  //           }
-  //           <Text style={{fontSize:25, paddingLeft: 2, paddingRight: 2 }}>{option.replace('?', '')}</Text>
-  //       </View>
-  //   )
-  // }
 
   return (
     <View style={{paddingTop: 30, paddingLeft: 10, paddingRight: 10}}>
